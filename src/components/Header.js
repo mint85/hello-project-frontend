@@ -5,8 +5,8 @@ function Header (props) {
     
     return (
         <nav>
-            <img src = "https://i.ibb.co/19PcHJ5/ee48d5829b2040aea1ff9af1e69d703a.png" alt='logo' style={{height:"150px", width: "auto"}} className='logo'/>
-            <Link to="/" style={{textDecoration:"none", color:"black"}}>HOME
+            <img src = "https://i.ibb.co/nMZcHHZ/ee48d5829b2040aea1ff9af1e69d703a.png" alt='logo' style={{height:"130px", width: "auto", marginTop:"-43px", marginLeft:"0px"}} className='logo'/>
+            <Link to="/" style={{textDecoration:"none", color:"black",}}>HOME
             </Link>
             <Link to="/ideas" style={{textDecoration:"none", color:"black"}}>IDEAS
             </Link>
