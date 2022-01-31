@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
 
-  const URL = "https://localhost:3001";
+  const URL = "https://hello-project-backend.herokuapp.com/";
   return (
     <div className="App">
      <Header />
