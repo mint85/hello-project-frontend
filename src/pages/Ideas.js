@@ -7,7 +7,7 @@ function Ideas(props) {
   // Function to return once we get the data from the backend
   const loaded = () => {
     return (
-      <section className="ideas-flex-container">
+      <section className="ideas-flex-grid">
         {props.ideas.map((idea) => (
           <div key={idea._id} className="idea-container">
             <p className="idea-title">{idea.name}</p>
@@ -18,7 +18,7 @@ function Ideas(props) {
               </Link>
             </div>
           </div>
-        ))};
+        ))}
       </section>
     );
   };
