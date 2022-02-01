@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 function NewForm(props) {
   const [form, setForm] = useState({
@@ -10,6 +11,7 @@ function NewForm(props) {
     setForm({ ...form, [event.target.name]: event.target.value });
   };
 
+  const history = useHistory();
   const handleSubmit = (event) => {
     event.preventDefault();
     props.createIdeas(form);
@@ -17,6 +19,7 @@ function NewForm(props) {
       name: "",
       img: "",
     });
+    history.push("/ideas");
   };
 
   return (
