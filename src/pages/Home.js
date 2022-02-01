@@ -2,7 +2,7 @@ import '../styles.css';
 
 function Home(props) {
     return (
-        <h1></h1>
+        <h1> </h1>
     );
 }
 
