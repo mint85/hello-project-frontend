@@ -1,12 +1,62 @@
 *{
     margin:0 auto;
 }
+body {
+    background-image: url('https://i.ibb.co/fQx7Qpr/shutterstock-1924269197.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 80px 260px;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
     width: 100%;
     margin: auto;
-    color:black;
+    color: #2A3439;
     background-color: #FCFFF7;
+    
 }
+.ideas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 100px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+.project {
+    font-size: 100px;
+    margin-top: 20px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+
+@keyframes animate {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color:#2A3439;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 90.1%, 100% {
+        color:#2A3439;
+        text-shadow: 0 0 10px #2A3439,
+        0 0 20px #FFE900,
+        0 0 40px #FFE900,
+        0 0 80px #FFE900,
+        0 0 160px #FFE900;
+
+    }
+}
+
+
+
+
+
+

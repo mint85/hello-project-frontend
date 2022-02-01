@@ -2,7 +2,14 @@ import '../styles.css';
 
 function Home(props) {
     return (
-        <h1> </h1>
+        <>
+        <div className='project'> 
+        PROJECT
+        </div>
+        <div className='ideas'>
+        IDEAS
+        </div>
+        </>
     );
 }
 
