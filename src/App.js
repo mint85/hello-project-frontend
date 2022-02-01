@@ -19,13 +19,13 @@ function App() {
   const URL = "https://hello-project-backend.herokuapp.com/";
 
   // Create function to make api call to obtain Ideas data from database
-  const getIdeasData = async () => {
+  const getIdeas = async () => {
     const response = await fetch(URL + "ideas");
     const data = await response.json();
     setIdeas(data);
   };
 
-const createIdeasData = async(idea) => {
+const createIdeas = async(idea) => {
   await fetch(URL + "ideas", {
     method: "POST",
     headers: {
@@ -34,14 +34,23 @@ const createIdeasData = async(idea) => {
     body: JSON.stringify(idea)
   });
 
-  getIdeasData();
+  getIdeas();
 }
 
-
+const updateIdeas = async(idea, id) => {
+  await fetch(URL + "ideas/" + id, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "Application/JSON"
+    },
+    body: JSON.stringify(idea),
+  });
+  getIdeas();
+}
 
   // Make initial call for data inside a useEffect
   // This will only happen once on component load
-  useEffect(() => getIdeasData(), []);
+  useEffect(() => getIdeas(), []);
   
   return (
     <div className="App">
@@ -50,19 +59,19 @@ const createIdeasData = async(idea) => {
        <Route exact path='/'>
          <Home />
        </Route>
-       <Route path="/ideas">
+       <Route exact path="/ideas">
          <Ideas ideas={ideas} />
        </Route>
        <Route path="/newform">
-         <NewForm ideas={ideas} createIdeasData={createIdeasData}/>
+         <NewForm ideas={ideas} createIdeasa={createIdeas}/>
        </Route>
        <Route 
-       path="/editform/:id"
+       path="/ideas/:id"
        render={(rp) => (
          <EditForm
          ideas= {ideas}
-         updateIdea = {updateIdea}
-        deleteIdea = {deleteIdea}
+         updateIdeas = {updateIdeas}
+        // deleteIdea = {deleteIdea}
           {...rp}
           />
        )}

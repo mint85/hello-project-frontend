@@ -1,9 +1,6 @@
-import { Link } from 'react-router-dom'
-
+import { Link } from "react-router-dom";
 
 function Ideas(props) {
-
-
   // Function to return once we get the data from the backend
   const loaded = () => {
     return props.ideas.map((idea) => (
@@ -11,7 +8,9 @@ function Ideas(props) {
         <p className="idea-title">{idea.name}</p>
         <img src={idea.img} alt={idea.name} />
         <div className="button-container">
-          <Link to={`/ideas/${idea._id}`}><button className="button">EDIT</button></Link>
+          <Link to={`/ideas/${idea._id}`}>
+            <button className="button">EDIT</button>
+          </Link>
         </div>
       </div>
     ));
