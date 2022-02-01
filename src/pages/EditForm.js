@@ -17,8 +17,16 @@ function EditForm(props) {
     props.history.push("/ideas");
   };
 
+  const removeIdea = () => {
+    props.deleteIdeas(idea._id);
+    props.history.push("/ideas");
+  };
+
   return (
     <section>
+      <button id="delete" onClick={removeIdea}>
+        DELETE
+      </button>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

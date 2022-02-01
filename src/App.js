@@ -48,6 +48,13 @@ const updateIdeas = async(idea, id) => {
   getIdeas();
 }
 
+const deleteIdeas = async id => {
+  await fetch(URL + "ideas/" + id, {
+    method: "DELETE",
+  })
+  getIdeas();
+}
+
   // Make initial call for data inside a useEffect
   // This will only happen once on component load
   useEffect(() => getIdeas(), []);
@@ -63,7 +70,7 @@ const updateIdeas = async(idea, id) => {
          <Ideas ideas={ideas} />
        </Route>
        <Route path="/newform">
-         <NewForm ideas={ideas} createIdeasa={createIdeas}/>
+         <NewForm ideas={ideas} createIdeas={createIdeas}/>
        </Route>
        <Route 
        path="/ideas/:id"
@@ -71,7 +78,7 @@ const updateIdeas = async(idea, id) => {
          <EditForm
          ideas= {ideas}
          updateIdeas = {updateIdeas}
-        // deleteIdea = {deleteIdea}
+         deleteIdeas = {deleteIdeas}
           {...rp}
           />
        )}
