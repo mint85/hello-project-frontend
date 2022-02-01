@@ -14,7 +14,7 @@ function Ideas(props) {
             <img className="idea-image" src={idea.img} alt={idea.name} />
             <div className="button-container">
               <Link to={`/ideas/${idea._id}`}>
-                <button className="button">EDIT</button>
+                <h3>EDIT</h3>
               </Link>
             </div>
           </div>
