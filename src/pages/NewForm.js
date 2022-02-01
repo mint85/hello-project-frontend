@@ -12,7 +12,7 @@ function NewForm(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.createIdeasData(form);
+    props.createIdeas(form);
     setForm({
       name: "",
       img: "",
