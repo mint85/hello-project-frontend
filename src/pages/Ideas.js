@@ -1,14 +1,17 @@
+import { Link } from 'react-router-dom'
+
+
 function Ideas(props) {
 
 
   // Function to return once we get the data from the backend
   const loaded = () => {
     return props.ideas.map((idea) => (
-      <div className="idea-container">
+      <div key={idea._id} className="idea-container">
         <p className="idea-title">{idea.name}</p>
         <img src={idea.img} alt={idea.name} />
         <div className="button-container">
-          <button className="button">EDIT</button>
+          <Link to={`/ideas/${idea._id}`}><button className="button">EDIT</button></Link>
         </div>
       </div>
     ));

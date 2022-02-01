@@ -6,6 +6,7 @@ import {useState, useEffect} from "react";
 import Home from './pages/Home';
 import Ideas from './pages/Ideas';
 import NewForm from './pages/NewForm';
+import EditForm from './pages/EditForm';
 
 
 import './App.css';
@@ -55,6 +56,17 @@ const createIdeasData = async(idea) => {
        <Route path="/newform">
          <NewForm ideas={ideas} createIdeasData={createIdeasData}/>
        </Route>
+       <Route 
+       path="/editform/:id"
+       render={(rp) => (
+         <EditForm
+         ideas= {ideas}
+         updateIdea = {updateIdea}
+        deleteIdea = {deleteIdea}
+          {...rp}
+          />
+       )}
+         />
      </Switch>
      <Footer />
     </div>
