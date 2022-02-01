@@ -1,0 +1,12 @@
+.ideas-flex-container {
+    display: flex;
+}
+
+.idea-container {        
+    flex-flow: row wrap;
+    background-color: lightseagreen;
+}
+
+.idea-image {
+    height: 400px;    
+}
