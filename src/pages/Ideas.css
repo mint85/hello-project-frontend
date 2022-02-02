@@ -7,7 +7,11 @@
 } */
 
 body {
+<<<<<<< HEAD
   background-color: white;
+=======
+    background-color: #ffffff;
+>>>>>>> afd37c8cbcabaffeaf9bd943903265c878f1a32a
 }
 
 .ideas-flex-grid {
