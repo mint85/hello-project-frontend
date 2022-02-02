@@ -47,6 +47,9 @@ function EditForm(props) {
           DELETE
         </button>
       </form>
+      <div className='background'>
+            <img src= "https://i.ibb.co/fQx7Qpr/shutterstock-1924269197.png" alt="backgroundimage" className='background-image'></img>
+        </div>
     </section>
   );
 }
