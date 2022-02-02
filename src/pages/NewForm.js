@@ -46,7 +46,7 @@ function NewForm(props) {
         <input type="submit" value="Add idea" />
       </form>
       <div className='background'>
-            <img src= "https://i.ibb.co/fQx7Qpr/shutterstock-1924269197.png" alt="backgroundimage" className='background-image'></img>
+            <img src= "https://i.ibb.co/fQx7Qpr/shutterstock-1924269197.png" alt="backgroundimage" className='background-image2'></img>
         </div>
     </section>
   );
