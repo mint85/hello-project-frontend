@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
+import "../Form.css";
+
 function NewForm(props) {
   const [form, setForm] = useState({
     name: "",
@@ -32,6 +34,7 @@ function NewForm(props) {
           placeholder="Idea name"
           onChange={handleChange}
         />
+        <br />
         <input
           type="text"
           value={form.img}
@@ -39,6 +42,7 @@ function NewForm(props) {
           placeholder="image URL"
           onChange={handleChange}
         />
+        <br />
         <input type="submit" value="Add idea" />
       </form>
     </section>

@@ -24,9 +24,6 @@ function EditForm(props) {
 
   return (
     <section>
-      <button id="delete" onClick={removeIdea}>
-        DELETE
-      </button>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -35,6 +32,7 @@ function EditForm(props) {
           placeholder="Idea name"
           onChange={handleChange}
         />
+        <br />
         <input
           type="text"
           value={editForm.img}
@@ -42,7 +40,12 @@ function EditForm(props) {
           placeholder="image URL"
           onChange={handleChange}
         />
+        <br />
         <input type="submit" value="Submit" />
+        <br />
+        <button id="delete" onClick={removeIdea}>
+          DELETE
+        </button>
       </form>
     </section>
   );
