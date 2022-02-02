@@ -1,0 +1,49 @@
+section {
+  width: 50%;
+  margin-top: 30px;
+}
+
+input {
+  font-size: 16px;
+  width: 50%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #1f75fe;
+  color: #2a3439;
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 100px;
+  color: #1f75fe;
+  background-color: white;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 1px #2a3439;
+  border-radius: 30px;
+  transition: 0.8s;
+}
+
+input[type="submit"]:hover {
+  background-color: #1f75fe;
+  color: white;
+}
+
+#delete {
+  border-radius: 20px;
+  background-color: #e53d00;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  box-shadow: 3px 3px 1px #2a3439;
+  padding: 5px 10px;
+  transition: 0.8s;
+}
+
+#delete:hover {
+  background-color: white;
+  color: #e53d00;
+}
