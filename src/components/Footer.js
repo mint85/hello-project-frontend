@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import "../footer.css";
 function Footer() {
   return (
@@ -6,27 +6,27 @@ function Footer() {
     <section className="footer">
         
           <div className="github-f">
-            <Link to="https://github.com/mint85/hello-project-frontend">
+            <a href="https://github.com/mint85/hello-project-frontend" target="_blank" rel="noreferrer">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                 alt="github-link"
                 className="github-logo"
               />
               
-            </Link>
+            </a>
             <p className="frontend">Frontend</p>
             </div>
             
 
             <div className="github-b">
-            <Link to="https://github.com/mint85/hello-project-backend">
+            <a href="https://github.com/mint85/hello-project-backend" target="_blank" rel="noreferrer">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                 alt="github-link" 
                 className="github-logo2"
               />
               
-            </Link>
+            </a>
             <p className="backend">Backend</p>
             </div>
        

@@ -11,9 +11,9 @@ function Header (props) {
             </Link>
             {/* <Link to="/" style={{textDecoration:"none", color:"#2A3439", fontWeight:"500"}}>HOME
             </Link> */}
-            <Link to="/ideas" style={{textDecoration:"none", color:"#2A3439", fontWeight:"500"}}>IDEAS
+            <Link to="/ideas" style={{textDecoration:"none", color:"#2A3439", fontWeight:"800"}}>IDEAS
             </Link>
-            <Link to="/newform"style={{textDecoration:"none", color:"#2A3439", fontWeight:"500"}}>ADD AN IDEA
+            <Link to="/newform"style={{textDecoration:"none", color:"#2A3439", fontWeight:"800"}}>ADD AN IDEA
             </Link>
             </nav>
            
