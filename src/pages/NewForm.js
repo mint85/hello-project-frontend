@@ -25,7 +25,7 @@ function NewForm(props) {
   };
 
   return (
-    <section>
+    <section className="form-container">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
