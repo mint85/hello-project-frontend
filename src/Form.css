@@ -41,6 +41,7 @@ input[type="submit"]:hover {
   box-shadow: 3px 3px 1px #2a3439;
   padding: 5px 10px;
   transition: 0.8s;
+  margin-bottom: 5px;
 }
 
 #delete:hover {
