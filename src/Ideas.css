@@ -22,7 +22,6 @@ body {
     content: "";
     flex: auto;
     flex-basis: 66.5%;
-    /* flex-basis: 33%; */
     flex-grow: 0;
 }
 
