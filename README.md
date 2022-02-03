@@ -10,6 +10,7 @@ Hello project is a MERN stack web app with CRUD operations that allows users to 
 - Node.js
 - JavaScript
 - CSS
+- Confluence
 
 ## Screenshots
 
