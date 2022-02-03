@@ -18,12 +18,12 @@ body {
     justify-content: space-between;
 }
 
-.ideas-flex-container::after {
+/* .ideas-flex-container::after {
     content: "";
     flex: auto;
     flex-basis: 66.5%;
     flex-grow: 0;
-}
+} */
 
 .idea-container {
     flex: 1;
@@ -71,11 +71,11 @@ body {
 }
 
 
-@media (max-width: 1345px) {
+/* @media (max-width: 1345px) {
     .ideas-flex-container::after {
         flex-basis: 50%;
     }
-}
+} */
 
 @media (max-width: 960px) {
     .idea-image {
