@@ -21,6 +21,8 @@ Hello project is a MERN stack web app with CRUD operations that allows users to 
 
 ## Getting Started
 
+[Hello Project](https://hello-project.netlify.app/)
+
 ## Future Enhancements
 
 - Authentication and Authorization that allow users to only delete and edit their own submissions
