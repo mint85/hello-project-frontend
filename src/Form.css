@@ -12,6 +12,7 @@ input {
   border-bottom: 1px solid #1f75fe;
   color: #2a3439;
   outline: none;
+  font-weight: bold;
 }
 
 input[type="submit"] {
