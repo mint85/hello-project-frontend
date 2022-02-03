@@ -3,7 +3,7 @@ import "../footer.css";
 function Footer() {
   return (
       
-    <section className="footer">
+    <div className="footer">
         
           <div className="github-f">
             <a href="https://github.com/mint85/hello-project-frontend" target="_blank" rel="noreferrer">
@@ -15,10 +15,10 @@ function Footer() {
               
             </a>
             <p className="frontend">Frontend</p>
-            </div>
+            
             
 
-            <div className="github-b">
+            
             <a href="https://github.com/mint85/hello-project-backend" target="_blank" rel="noreferrer">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -31,7 +31,7 @@ function Footer() {
             </div>
        
       
-    </section>
+    </div>
   
   );
 }
